@@ -1,0 +1,145 @@
+.mainIllustration img{
+    width: 100%;
+    pointer-events: none;
+    user-select: none;
+    margin-bottom: 5%;
+}
+
+#vice-1,#vice-2{
+    box-shadow: 3px 5px 4px #899999;
+    background-color: rgb(245, 241, 178);
+}
+
+#vice-1:hover,#vice-2:hover{
+    transition: 0.3s;
+    box-shadow: 3px 5px 4px #899999;
+    background-color: rgb(235, 227, 101);
+}
+.aktualne-table{
+    display:grid;
+    grid-template-columns: repeat(3,1fr);
+    overflow: hidden;
+    gap: 3%;
+    padding: 0 5px 10% 0;
+}
+
+.card{
+    background-color: rgb(245, 241, 178);
+    overflow: hidden;
+    text-align: justify;
+    box-shadow: 3px 5px 4px #899999;
+    min-width: 250px;
+}
+.card:hover{
+    transition: 0.1s;
+    box-shadow: 4px 7px 5px #899999;
+}
+.card,.aktualne-text{
+    border-radius: 20px;
+}
+.card div img{
+    width: 100%;
+}
+.aktualne-text{
+    display: flex;
+    justify-content: center;
+    background: rgba(235, 227, 101, 1);
+    font-size: 30px;
+    font-family: "Rubik ExtraBold";
+    box-shadow: 3px 5px 4px #899999;
+}
+.aktualne-text a{
+    padding: 20px;
+    align-self: center;
+}
+.aktualne-column{
+    display: inline-grid;
+    grid-row-gap: 4%;
+}
+.title {
+    font-size: 32px;
+    font-family: "Rubik ExtraBold";
+    margin-left: 20px;
+
+}
+.card div p{
+    font-family: "Open Sans";
+    font-size: 16px;
+    line-height: 1.5em;
+    margin-top: 10px;
+    padding-bottom: 10px;
+    margin-right: 20px;
+    margin-left: 20px;
+}
+
+.atrakce{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap:3%;
+    padding-bottom: 7%;
+}
+
+.card-atrakce,.card-atrakce-text{
+    width:100%;
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 3px 5px 4px #899999;
+}
+
+.flex-atrakce{
+    display: inline-grid;
+    grid-row-gap: 6%;
+}
+
+.card-atrakce img{
+    width: 100%;
+    min-height: 100%;
+    object-fit: cover;
+    vertical-align: middle;
+    margin-bottom: 20px;
+}
+.card-atrakce-text{
+    text-align: center;
+    line-height: 3em;
+    background: #EBE365;
+    font-size: 30px;
+    font-family: "Rubik ExtraBold";
+}
+.card-atrakce-text a{
+    margin:10px;
+}
+
+@media only screen and (max-width: 800px) {
+    .aktualne-table{
+        display:flex;
+        flex-direction: column;
+        padding-right: 5px;
+    }
+    .atrakce{
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+@media only screen and (max-width: 800px) {
+    #menu{
+        display:flex;
+        padding: 10px;
+        border: 2px solid black;
+        border-radius: 10px;
+    }
+    #menu:hover{
+        transition: 0.23s;
+        background-color:white;
+    }
+    .aktualne-table{
+        padding-bottom: 10%;
+    }
+    .aktualne-column,.flex-atrakce{
+        margin-top: 20%;
+    }
+    .flex-atrakce:nth-child(3){
+        padding-bottom: 20%;
+    }
+}
+

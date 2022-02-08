@@ -1,0 +1,28 @@
+.image img{
+    float:right;
+    margin-left: 40px;
+    width: 200px;
+    height: 150px;
+}
+.article{
+    text-align: justify;
+    margin-top: 10%;
+}
+.article-table{
+    display: flex;
+    margin-bottom: 10%;
+}
+.table{
+    display: flex;
+    margin-left: 5%;
+    justify-content: center;
+}
+
+table,tr,th,td{
+    border: 2px solid black;
+    border-collapse: collapse;
+}
+.article-list{
+    margin-bottom: 10%;
+    column-count: 2;
+}
